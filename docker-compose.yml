@@ -1,0 +1,24 @@
+services:
+  webserver:
+    build: .
+    restart: always
+    ports:
+      - "80:80"
+    networks:
+      - rekt0_bridge
+    depends_on:
+      - database
+  
+  database:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: Aa123456
+      MYSQL_DATABASE: bookstore_db
+      MYSQL_USER: rekt0zarius
+      MYSQL_PASSWORD: rekt0zarius_1
+    networks:
+      - rekt0_bridge
+
+networks:
+  rekt0_bridge:
+    driver: bridge
