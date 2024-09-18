@@ -9,3 +9,12 @@ variable "ec2-type" {
 variable "ec2-key" {
   default = "rektozarius"
 }
+
+# Using ssm parameter store is recommended instead. Don't forget to change relevant commented out lines in main.tf
+variable "db-user-pass" {
+  default = ""
+}
+
+variable "db-root-pass" {
+  default = ""
+}

@@ -2,7 +2,7 @@
 
 ## Description
 
-Bookstore Web API Application aims to create a bookstore web service using Docker to give students the understanding to dockerization of an application. The application code is to be deployed as a RESTful web service with Flask using Dockerfile and Docker Compose on AWS Elastic Compute Cloud (EC2) Instance using Terraform.
+Bookstore Web API Application aims to create a bookstore web service using Docker to give students an understanding of the dockerization of an application. The application code will be deployed as a RESTful web service with Flask using Dockerfile and Docker Compose on AWS Elastic Compute Cloud (EC2) Instance using Terraform.
 
 ## Problem Statement
 
@@ -113,20 +113,6 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 - use git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
 - run the web application on AWS EC2 instance using the GitHub repo as codebase.
-
-## Steps to Solution
-  
-- Step 1: Download or clone project definition from `clarusway-aws-workshop` repo on Github
-
-- Step 2: Create project folder for local public repo on your pc
-
-- Step 3: Prepare scripts to build a Python Flask App Image using Dockerfile and Docker Compose
-
-- Step 4: Prepare a Terrform configuration file to deploy your app on EC2 Instance
-
-- Step 5: Push your application into your own public repo on Github
-
-- Step 6: Deploy your application on AWS Cloud using Terraform to showcase your app within your team.
 
 ## Notes
 
