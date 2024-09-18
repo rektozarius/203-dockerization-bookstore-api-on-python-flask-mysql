@@ -12,10 +12,10 @@ services:
   database:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: Aa123456
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASS}
       MYSQL_DATABASE: bookstore_db
       MYSQL_USER: rekt0zarius
-      MYSQL_PASSWORD: rekt0zarius_1
+      MYSQL_PASSWORD: ${DB_PASS}
     networks:
       - rekt0_bridge
 
