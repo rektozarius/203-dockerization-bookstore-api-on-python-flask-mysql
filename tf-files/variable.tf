@@ -9,10 +9,3 @@ variable "ec2-type" {
 variable "ec2-key" {
   default = "rektozarius"
 }
-
-variable "db-pass" {
-  default = "rekt0zarius_1"
-}
-variable "db-root-pass" {
-  default = "Aa123456"
-}
