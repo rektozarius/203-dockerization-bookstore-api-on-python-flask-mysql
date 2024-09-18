@@ -4,7 +4,6 @@
 resource "aws_instance" "webserver" {
   ami                    = data.aws_ami.amazon_linux_2.id
   instance_type          = var.ec2-type
-  key_name               = var.ec2-key
   vpc_security_group_ids = [aws_security_group.webserver-sg.id]
   user_data_base64 = base64encode(templatefile("userdata.sh", { git-repo = var.git-repo,
   db-pass = data.aws_ssm_parameter.db-user-pass.value, db-root-pass = data.aws_ssm_parameter.db-root-pass.value }))
